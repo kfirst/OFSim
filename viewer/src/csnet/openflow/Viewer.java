@@ -82,7 +82,7 @@ public class Viewer {
     }
 
     private static void showUsage() {
-        System.out.println("Usage: java -Xms512m -Xmx1024m -jar openflowViewer "
+        System.out.println("Usage: java -Xms512m -Xmx1024m -jar viewer "
                 + "configNameAndPath resultsToShow calculateInterval [display]");
         System.out.println("configNameAndPath: [eg. name1:./config1.ini,name2:./config1.ini]");
         System.out.println("    pairs of name and path of configuration files, name and path are separated by colon, each pair is separated by commas");
