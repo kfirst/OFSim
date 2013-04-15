@@ -1,6 +1,23 @@
 *.class
 
+# Project Files #
+*.classpath
+*.project
+simulator/manifest.mf
+simulator/build.xml
+simulator/nbproject/
+simulator/.settings/
+simulator/dist/
+simulator/build/
+simulator/bin/
+viewer/manifest.mf
+viewer/build.xml
+viewer/nbproject/
+viewer/.settings/
+viewer/dist/
+viewer/build/
+viewer/bin/
+
 # Package Files #
-*.jar
 *.war
 *.ear

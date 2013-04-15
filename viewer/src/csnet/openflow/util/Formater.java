@@ -1,0 +1,29 @@
+package csnet.openflow.util;
+
+import java.text.DateFormat;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Formater {
+
+    private static final DateFormat dateFormater = new SimpleDateFormat(
+            "yyyy.MM.dd/HH:mm:ss.SSS");
+    private static final NumberFormat numberFormater = new DecimalFormat("000");
+    private static final NumberFormat doubleFormater = new DecimalFormat("0.0000");
+    private static final NumberFormat percentageFormater = new DecimalFormat("0.0000");
+
+    public static String formatTime(long timestampInMicrosecond) {
+        return dateFormater.format(new Date(timestampInMicrosecond / 1000))
+                + numberFormater.format(timestampInMicrosecond % 1000);
+    }
+
+    public static String formatDouble(double num) {
+        return doubleFormater.format(num);
+    }
+
+    public static String formatPercentage(double num) {
+        return percentageFormater.format(num * 100) + "%";
+    }
+}
